@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    height: 90vh;
+}
+.nav{
+    border-bottom: 2px solid lightgray;
+    padding: 20px 0px 40px 0px;
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.header{
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    z-index: 3;
+}
+.header_image{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    z-index: 1;
+    top: 0;
+    background: url('https://raw.githubusercontent.com/solodev/transparent-overlay/master/overlay-img-1.jpg') no-repeat center center/cover;
+}
+.header_overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(27, 28, 46, 0.877);
+    overflow:hidden;
+    height: 90vh;
+    z-index: 2;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.welcome{
+    text-align: center;
+}
+.welcome h2{
+    font-size: 30px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.gallery{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left:50px;
+    font-size: 25px;
+    color: white;
+}
+.gallery span:last-child{
+    font-size:12px;
+    color: gray;
+}
+.travel{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+    margin-right: 50px;
+}
+.travel span:last-child{
+    font-size:12px;
+    color: gray;
+}
+.vertical-line{
+    display: inline-block;
+    border-right: 2px solid lightgray;
+    vertical-align: middle;
+    height: 100px;
+}
+.fa{
+    color: #009999;
+    font-size: 20px;
+}
+button{
+    padding: 20px;
+    margin: 25px;
+    background-color: transparent;
+    color:#009999;
+    width: 250px;
+    border: 3px solid #009999;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: larger;
+}
+.bars{
+    display: none;
+}
+button:hover{
+    color: white;
+    background-color: #009999;
+}
+.row{
+  width: 80%;
+  margin: 70px auto;
+  text-align: center;
+}
+.card{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.card img{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+.card button{
+    padding:10px;
+    margin:15px 0 15px 0;
+    width: 150px;
+    font-size: small;
+}
+.card h3{
+    color:gray;
+    font-size: 16px;
+    padding: 15px;
+}
+.card p{
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    padding: 10px;
+}
+@media screen and (max-width: 768px){
+    .nav .right{
+        display: none;
+    }
+    .nav .bars{
+        display: block;
+        color: lightgray;
+        float: right;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .nav .left{
+        padding: 10px;
+    }
+    .bars .fa{
+        color:lightgray
+    }
+    .card{
+        display: block;
+        width: 80%;
+    }
+    .card img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .gallery{
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .vertical-line{
+        display: none;
+        margin: 0;
+    }
+    .travel{
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .welcome h2{
+        margin-top: 20px;
+    }
+    .nav{
+        padding-bottom: 20px;
+    }
+    .welcome button{
+        padding: 10px;
+        margin: 15px;
+    }
+}
